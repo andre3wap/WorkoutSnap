@@ -8,6 +8,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -47,7 +48,9 @@ public class MainActivity extends AppCompatActivity {
             Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
             paint.setColor(Color.rgb(110,110, 110));
             paint.setTextSize((int) (12 * scale));
-            ///paint.setTypeface(R.)
+
+            Typeface tf = Typeface.createFromAsset(getApplicationContext().getAssets(),"fonts/fontname.ttf");
+            paint.setTypeface(tf);
 
             // draw text to the Canvas center
             Rect bounds = new Rect();
