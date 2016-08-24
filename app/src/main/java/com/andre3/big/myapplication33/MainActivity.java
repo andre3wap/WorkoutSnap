@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
             Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
             paint.setColor(Color.rgb(110,110, 110));
             paint.setTextSize((int) (12 * scale));
+            ///paint.setTypeface(R.)
 
             // draw text to the Canvas center
             Rect bounds = new Rect();
